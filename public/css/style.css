@@ -1,0 +1,135 @@
+:root {
+  --pagebg: #fff;
+  --main: #4682b4;
+  --bglink: rgba(0, 0, 0, 0.3);
+  --lightbg: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--pagebg);
+}
+
+.container {
+  max-width: 1100px;
+  padding: 10px 0;
+  margin: auto;
+}
+
+header {
+  font-size: 28px;
+  padding: 10px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--main);
+}
+
+header input {
+  padding: 5px 10px;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #4682b4;
+}
+
+nav {
+  background: var(--main);
+  color: var(--lightbg);
+  padding: 20px 0;
+}
+
+ul {
+  list-style: none;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul li a {
+  color: var(--lightbg);
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Abril Fatface', cursive;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+ul li.active a,
+ul li:hover a {
+  background: var(--bglink);
+}
+
+.banner {
+  height: 600px;
+  background-image: url('../img/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main);
+  font-size: 68px;
+  font-weight: bold;
+  text-shadow: 5px 5px 4px var(--lightbg);
+  font-family: 'Abril Fatface', cursive;
+}
+
+h2 {
+  color: var(--main);
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.item-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px var(--main);
+}
+
+.item-image:hover {
+  transform: scale(1.1);
+}
+
+.item-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
+
+.item-color {
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+footer {
+  border-top: 2px solid var(--main);
+  padding: 20px 0;
+  text-align: center;
+  font-size: 18px;
+  color: var(--main);
+}
