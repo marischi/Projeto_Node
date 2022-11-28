@@ -21,6 +21,11 @@ body {
   margin: auto;
 }
 
+.container img {
+  margin: auto;
+  display: block;
+}
+
 header {
   font-size: 28px;
   padding: 10px 0;
@@ -73,7 +78,6 @@ ul li:hover a {
 
 .banner {
   height: 600px;
-  background-image: url('../img/banner.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
